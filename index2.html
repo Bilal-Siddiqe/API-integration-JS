@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="file" id="user">
+
+    <img id="myimg" src="/Profile.jpg" alt="" border="2">
+
+    <button onclick="show()">CLik me</button>
+
+
+    <script>
+
+
+        function show() {
+            let ImageUrl = document.getElementById("user").files[0].name
+            let myImage = document.getElementById("myimg");
+            myImage.src = imageUrl;
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
